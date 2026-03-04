@@ -1,0 +1,68 @@
+/* ─────────────────────────────────────────
+   responsive.css — Media Queries
+───────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+  :root { --page-padding: 0 40px; }
+  .servicios-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  :root { --page-padding: 0 20px; }
+  .nav-links { display: none; }
+  .hero-badge { width: 58px; height: 58px; }
+
+  /* Desactivar scroll snap — flujo normal en móvil */
+  html { scroll-snap-type: none; height: auto; }
+  body { height: auto; }
+
+  /* Acerca */
+  .acerca {
+    height: auto;
+    min-height: unset;
+    padding: 80px 20px 40px;
+    align-items: flex-start;
+  }
+  .acerca-card {
+    grid-template-columns: 1fr;
+    height: auto;
+    min-height: unset;
+    padding: 36px 24px;
+    gap: 28px;
+  }
+  .acerca-right {
+    justify-content: center;
+    height: 320px;
+    padding: 0 0 14px 14px;
+  }
+  .acerca-img-wrapper { max-width: 100%; }
+  .acerca-img-shadow { top: 10px; left: -10px; bottom: -10px; }
+
+  /* Servicios */
+  .servicios {
+    height: auto;
+    min-height: unset;
+    scroll-snap-align: none;
+    padding: 40px 20px 60px;
+    align-items: stretch;
+  }
+  .servicios-card {
+    height: auto;
+    min-height: unset;
+    max-height: none;
+    overflow: visible;
+    padding: 28px 20px 36px;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  .servicios-grid {
+    grid-template-columns: 1fr;
+    flex: none;
+    gap: 14px;
+  }
+  .servicio-card {
+    height: 180px;
+    min-height: 180px;
+  }
+}

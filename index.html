@@ -7,6 +7,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/sections.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
 </head>
 <body>
 
@@ -14,15 +16,13 @@
   <nav>
     <div class="nav-inner">
       <a href="#" class="nav-logo">
-        <img src="assets/images/text.svg" alt="Milano Events" />
+        <img src="assets/images/horizontal.svg" alt="Milano Events" />
       </a>
-
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="#acerca">Acerca</a></li>
         <li><a href="#servicios">Servicios</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
-
       <div class="nav-socials">
         <a href="https://wa.me/+50660102040" aria-label="WhatsApp" target="_blank"><i class="ti ti-brand-whatsapp"></i></a>
         <a href="https://www.facebook.com/milanoeventscr/" aria-label="Facebook" target="_blank"><i class="ti ti-brand-facebook"></i></a>
@@ -36,7 +36,6 @@
   <section class="hero" id="hero">
     <div class="hero-bg"></div>
     <div class="hero-overlay"></div>
-
     <div class="hero-content">
       <div class="hero-badge">
         <img src="assets/images/icon.svg" alt="Milano Events Icon" />
@@ -46,42 +45,141 @@
         Momentos que<br>
         volvemos <em>inolvidables</em>
       </h1>
-      <a href="#about" class="hero-cta">Conocer más</a>
+      <a href="#acerca" class="hero-cta">Conocer más</a>
     </div>
-
     <div class="scroll-hint">
       Deslizar
       <i class="ti ti-chevrons-down"></i>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="about" id="about">
-    <div class="about-card">
-      <div class="about-left">
-        <img src="assets/images/icon.svg" alt="Milano Events" class="about-icon" />
-        <p class="about-text">
+  <!-- ACERCA -->
+  <section class="acerca" id="acerca">
+    <div class="acerca-card">
+      <div class="acerca-left">
+        <img src="assets/images/icon.svg" alt="Milano Events" class="acerca-icon" />
+        <p class="acerca-text">
           En <strong>Milano Events</strong> creemos que cada celebración merece
           un ambiente que la haga memorable. Nos especializamos en crear
           experiencias visuales que transforman espacios y elevan eventos.
         </p>
-        <p class="about-text">
-          Desde la decoración hasta el sonido y la fotografía, somos
+        <p class="acerca-text">
+          Desde la decoración floral hasta el sonido y la fotografía, somos
           el equipo detrás de los momentos que nunca se olvidan.
         </p>
-        <div class="about-services">
-          <span class="about-service-item">Alquiler de Equipo</span>
-          <span class="about-service-item">Captura de Momentos</span>
-          <span class="about-service-item">Producción de Eventos</span>
-          <span class="about-service-item">Experiencias Únicas</span>
+        <div class="acerca-services">
+          <span class="acerca-service-item">Alquiler de Equipo</span>
+          <span class="acerca-service-item">Producción de Eventos</span>
+          <span class="acerca-service-item">Captura de Momentos</span>
+          <span class="acerca-service-item">Experiencias Únicas</span>
         </div>
       </div>
-      <div class="about-right">
-        <div class="about-img-wrapper">
-          <div class="about-img-shadow"></div>
-          <img src="assets/images/about.png" alt="Milano Events" class="about-img" />
+      <div class="acerca-right">
+        <div class="acerca-img-wrapper">
+          <div class="acerca-img-shadow"></div>
+          <img src="assets/images/sections/acerca-main.png" alt="Milano Events" class="acerca-img" />
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="servicios" id="servicios">
+    <div class="servicios-card">
+
+      <div class="servicios-header">
+        <h2>Nuestros servicios para eventos</h2>
+        <p>Soluciones visuales para eventos que elevan cada celebración</p>
+      </div>
+
+      <div class="servicios-grid">
+
+        <div class="servicio-card">
+          <div class="servicio-card-bg" style="--img: url('/assets/images/sections/servicios-flores.jpeg')"></div>
+          <div class="servicio-card-overlay"></div>
+          <div class="servicio-card-content">
+            <p class="servicio-categoria">Elegancia Visual</p>
+            <h3 class="servicio-nombre">Paredes Florales</h3>
+            <div class="servicio-estrellas">
+              <i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i>
+              <i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i>
+              <i class="ti ti-star-filled"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="servicio-card">
+          <div class="servicio-card-bg" style="--img: url('/assets/images/sections/servicios-laseres.jpeg')"></div>
+          <div class="servicio-card-overlay"></div>
+          <div class="servicio-card-content">
+            <p class="servicio-categoria">Diseño Lumínico</p>
+            <h3 class="servicio-nombre">Ambientación con Láseres</h3>
+            <div class="servicio-estrellas">
+              <i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i>
+              <i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i>
+              <i class="ti ti-star-filled"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="servicio-card">
+          <div class="servicio-card-bg" style="--img: url('/assets/images/sections/servicios-studiobooth.jpg')"></div>
+          <div class="servicio-card-overlay"></div>
+          <div class="servicio-card-content">
+            <p class="servicio-categoria">Detalles Memorables</p>
+            <h3 class="servicio-nombre">Servicio Studiobooth</h3>
+            <div class="servicio-estrellas">
+              <i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i>
+              <i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i>
+              <i class="ti ti-star-filled"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="servicio-card">
+          <div class="servicio-card-bg" style="--img: url('/assets/images/sections/servicios-planner.jpg')"></div>
+          <div class="servicio-card-overlay"></div>
+          <div class="servicio-card-content">
+            <p class="servicio-categoria">Dirección Creativa</p>
+            <h3 class="servicio-nombre">Planner de Eventos</h3>
+            <div class="servicio-estrellas">
+              <i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i>
+              <i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i>
+              <i class="ti ti-star-filled"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="servicio-card">
+          <div class="servicio-card-bg" style="--img: url('/assets/images/sections/servicios-dj.jpg')"></div>
+          <div class="servicio-card-overlay"></div>
+          <div class="servicio-card-content">
+            <p class="servicio-categoria">Energía Musical</p>
+            <h3 class="servicio-nombre">Experiencia de DJ</h3>
+            <div class="servicio-estrellas">
+              <i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i>
+              <i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i>
+              <i class="ti ti-star-filled"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="servicio-card">
+          <div class="servicio-card-bg" style="--img: url('/assets/images/sections/servicios-dron.png')"></div>
+          <div class="servicio-card-overlay"></div>
+          <div class="servicio-card-content">
+            <p class="servicio-categoria">Perspectiva Elevada</p>
+            <h3 class="servicio-nombre">Filmación con Dron</h3>
+            <div class="servicio-estrellas">
+              <i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i>
+              <i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i>
+              <i class="ti ti-star-filled"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
     </div>
   </section>
 
