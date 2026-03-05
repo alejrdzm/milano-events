@@ -263,7 +263,9 @@
   gap: 28px;
   overflow: hidden;
 }
-.servicios-header { text-align: center; }
+.servicios-header {
+    text-align: center;
+}
 .servicios-header h2 {
   font-family: var(--font-display);
   font-size: clamp(28px, 3vw, 44px);
@@ -302,7 +304,9 @@
   background-color: rgba(36,35,31,0.4);
   transition: transform 0.5s ease;
 }
-.servicio-card:hover .servicio-card-bg { transform: scale(1.05); }
+.servicio-card:hover .servicio-card-bg {
+    transform: scale(1.05);
+}
 .servicio-card-overlay {
   position: absolute;
   inset: 0;
